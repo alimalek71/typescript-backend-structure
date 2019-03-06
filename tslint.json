@@ -1,0 +1,39 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:latest",
+        "tslint-eslint-rules",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-any": true,
+        "array-type": true,
+        "arrow-return-shorthand": true,
+        "await-promise": true,
+        "ban-comma-operator": true,
+        "ban": [
+            true,
+            "eval",
+            {
+                "name": [
+                    "*",
+                    "forEach"
+                ],
+                "message": "forEach is not allowed!"
+            }
+        ],
+        "arrow-parens": true,
+        "ban-types": [
+            true,
+            [
+                "Object",
+                "Use {} instead."
+            ],
+            [
+                "String"
+            ]
+        ]
+    },
+    "rulesDirectory": []
+}
