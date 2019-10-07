@@ -1,0 +1,9 @@
+version: '3.7'
+
+services: 
+  my-service-name:
+    build: .
+    environment: 
+      PORT: 3000
+    ports: 
+      - 3000:3000
